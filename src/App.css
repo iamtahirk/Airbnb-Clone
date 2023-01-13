@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0 auto;
+}
+
+.App {
+  width: 100%;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  background-color: #FFFFFF;
+  box-shadow: 0 .3rem .75rem rgba(0, 0, 0, 0.1);
+  padding: 2.1rem 3.6rem;
+}
+
+.nav--logo {
+  max-width: 10rem;
+}
+
+section {
+  padding: 3.6rem;
+}
+
+.hero--img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 40rem;
+  margin-bottom: 3.6rem;
+}
+
+.hero--heading {
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 4rem;
+  margin-bottom: 1.6rem;
+}
+
+.hero--text {
+  font-weight: 300;
+  line-height: 2.6rem;
+  color: #222222;
+}
+
+.card-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 3.6rem;
+}
+
+.img-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+
+.cards-box {
+  display: flex;
+  /* flex-wrap: wrap;
+  justify-content: center; */
+}
+
+.card--img {
+  width: 100%;
+  max-width: 17.5rem;
+  border-radius: 1rem;
+}
+
+.current--status {
+  position: absolute;
+  top: .75rem;
+  left: .75rem;
+
+  padding: .5rem;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1.1rem;
+  text-align: center;
+
+  color: #222222;
+  width: 6.2rem;
+  border-radius: .3rem;
+  text-transform: uppercase;
+}
+
+.card-review-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #222222;
+  margin-bottom: .8rem;
+}
+
+.review--icon {
+  height: 1.4rem;
+  width: auto;
+  margin-right: .3rem;
+  margin-bottom: .2rem;
+}
+
+.card-review-container span{
+  color: #918E9B;
+}
+
+.card-review-container span {
+  padding-left: .1rem;
+  padding-right: .1rem;
+}
+
+.card-review-container .review--score {
+  padding-left: .1rem;
+  padding-right: .1rem;
+}
+
+.card--info {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: 300;
+  margin-bottom: .8rem;
+}
+
+.card--price {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+}
+
+.card--price span {
+  font-weight: 300;
+}
+
+
+@media only screen and (max-width: 480px){
+  nav {
+    padding: 2.1rem 2.4rem;
+  }
+
+  .cards-box {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  
+  .card-container, .card--img {
+    min-width: 100%;
+  }
+  
+}
